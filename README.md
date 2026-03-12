@@ -59,11 +59,9 @@ The first Weak or Failing facet is the binding constraint. Everything else is a 
 ### As a Claude Code slash command
 
 ```
-/strategy-review our client onboarding process
+/strategy our client onboarding process
 /strategy the new podcast format
 ```
-
-Both `/strategy-review` and `/strategy` work.
 
 ### Installation
 
@@ -71,7 +69,6 @@ Both `/strategy-review` and `/strategy` work.
 
 ```bash
 git clone https://github.com/SimonTheSalesBooster/strategy.git
-cp strategy/.claude/commands/strategy-review.md ~/.claude/commands/
 cp strategy/.claude/commands/strategy.md ~/.claude/commands/
 cp strategy/strategy-review.md ~/strategy-review.md
 ```
