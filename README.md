@@ -22,7 +22,7 @@ Add `strategy-review.md` to your project as a skill file or system prompt. Works
 
 - **Phase 1: The 10-Star Version** — "What would make this 10x better for 2x effort?" Dreams big, then finds the highest-leverage moves.
 - **Phase 2: The Minimum Viable Version** — "What is the absolute minimum that achieves the core goal?" Names everything that gets deferred and why.
-- **Phase 3: The Binding Constraint** — Runs the [Luck framework](https://github.com/SimonTheSalesBooster/luck)'s seven diagnostic facets to find the one thing that will kill this initiative regardless of how well everything else works.
+- **Phase 3: The Binding Constraint** — Runs Simon Severino's [Luck framework](https://github.com/SimonTheSalesBooster/luck)'s seven diagnostic facets to find the one thing that will kill this initiative regardless of how well everything else works.
 - **Phase 4: Scope Decision** — Forces a choice: Expand (go for 10-star), Hold (fix the constraint first), or Reduce (ship the minimum). No mushy middle.
 - **Phase 5: Sprint Plan** — 5 days. 1-2 hours each. No planning days. No prep days. Just doing.
 
@@ -146,7 +146,7 @@ Day 5: [first measurable result]
 This framework combines two open-source tools:
 
 - **[gstack](https://github.com/garrytan/gstack)** by Garry Tan — the "explicit gears" principle: separate thinking modes produce better output than blending everything together
-- **[Luck](https://github.com/SimonTheSalesBooster/luck)** by soleio & Strategy Sprints — the seven diagnostic facets that reveal why systems persist or die
+- **[Luck](https://github.com/SimonTheSalesBooster/luck)** by Strategy Sprints — the seven diagnostic facets that reveal why systems persist or die
 
 The Strategy Review is where they meet: Gary's scope discipline applied through the Luck framework's diagnostic lens, landing in a 5-day sprint you can start tomorrow.
 
