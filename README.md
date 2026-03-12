@@ -18,7 +18,7 @@ A structured review framework that runs any initiative — offer, campaign, syst
 
 Add `strategy-review.md` to your project as a skill file or system prompt. Works with any frontier model that accepts structured instructions.
 
-### What's in the box
+## What's in the box
 
 - **Phase 1: The 10-Star Version** — "What would make this 10x better for 2x effort?" Dreams big, then finds the highest-leverage moves.
 - **Phase 2: The Minimum Viable Version** — "What is the absolute minimum that achieves the core goal?" Names everything that gets deferred and why.
@@ -26,7 +26,7 @@ Add `strategy-review.md` to your project as a skill file or system prompt. Works
 - **Phase 4: Scope Decision** — Forces a choice: Expand (go for 10-star), Hold (fix the constraint first), or Reduce (ship the minimum). No mushy middle.
 - **Phase 5: Sprint Plan** — 5 days. 1-2 hours each. No planning days. No prep days. Just doing.
 
-### The Seven Diagnostic Facets
+## The Seven Diagnostic Facets
 
 | Facet | Question |
 |---|---|
@@ -40,7 +40,7 @@ Add `strategy-review.md` to your project as a skill file or system prompt. Works
 
 The first Weak or Failing facet is the binding constraint. Everything else is a distraction until that's fixed.
 
-### The Seven Failure Patterns
+## The Seven Failure Patterns
 
 | Pattern | What it looks like |
 |---|---|
@@ -56,14 +56,14 @@ The first Weak or Failing facet is the binding constraint. Everything else is a 
 
 ## How to use it
 
-### As a Claude Code slash command
+## As a Claude Code slash command
 
 ```
 /strategy our client onboarding process
 /strategy the new podcast format
 ```
 
-### Installation
+## Installation
 
 **Global (available in every Claude Code session):**
 
@@ -80,11 +80,11 @@ cd your-project
 git clone https://github.com/SimonTheSalesBooster/strategy.git .claude/skills/strategy
 ```
 
-### As a system prompt
+## As a system prompt
 
 Paste `strategy-review.md` into any frontier model conversation, then describe what you want reviewed.
 
-### Standalone
+## Standalone
 
 Copy the contents of `strategy-review.md` into ChatGPT, Claude, or any LLM. Then say:
 
@@ -154,9 +154,9 @@ The Strategy Review is where they meet: Gary's scope discipline applied through 
 
 ## About Strategy Sprints
 
-[Strategy Sprints](https://strategysprints.com) helps B2B business owners close bigger deals, faster, without hiring more people. The method: 90-day sprints, weekly reviews, one constraint at a time.
+[Strategy Sprints](https://www.strategysprints.com) helps B2B business owners close bigger deals, faster, without hiring more people. The method: 90-day sprints, weekly reviews, one constraint at a time.
 
-**Book a free Strategy Sprint call:** [strategysprints.com](https://strategysprints.com)
+**Book a free Strategy Sprint call:** [strategysprints.com](https://www.strategysprints.com)
 
 ---
 
