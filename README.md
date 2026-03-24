@@ -1,71 +1,79 @@
-# Strategy Review: Think Before You Build
+# Stop Building Things That Should Never Have Been Scoped
 
-> Three lenses. One binding constraint. A 5-day sprint that starts with doing, not planning.
+Most initiatives fail before Day 1.. not because the idea is bad, but because nobody asked what would kill it.
 
-## The core idea
-
-Most initiatives fail not because the idea is bad, but because people skip straight from excitement to execution. They either dream too big and stall, or ship too small and wonder why nothing changed.
-
-Strategy Review forces a specific sequence: dream the 10-star version, strip to the minimum viable version, then diagnose the binding constraint — the one thing that will kill this regardless of scope. Only then do you choose what to build. And then you build it in 5 days.
-
-Inspired by [Gary Tan's gstack](https://github.com/garrytan/gstack) — which enforces "explicit gears" for software engineering (planning, reviewing, shipping, QA as separate modes). This applies the same principle to business strategy: separate thinking from doing, and do the thinking in the right order.
+Strategy Review forces one sequence: dream the 10-star version, strip to the minimum, diagnose the binding constraint, then build — in 5 days.
 
 ---
 
-## The Skill: [strategy-review.md](strategy-review.md)
+## What It Produces
 
-A structured review framework that runs any initiative — offer, campaign, system, hire, partnership, product — through five sequential phases. Produces a scope decision and a concrete sprint plan.
+A scope decision and a sprint plan. Not a deck. Not a brainstorm. A decision.
 
-Add `strategy-review.md` to your project as a skill file or system prompt. Works with any frontier model that accepts structured instructions.
+```
+PHASE 3 — BINDING CONSTRAINT
+1. Solvency ............ Strong
+2. Gradient Coupling ... Strong
+3. Structural Compat ... Adequate
+4. Niche Construction .. Adequate
+5. Circulation ......... Weak  <-- BINDING CONSTRAINT
 
-## What's in the box
+Failure pattern: Pooled Fortune
 
-- **Phase 1: The 10-Star Version** — "What would make this 10x better for 2x effort?" Dreams big, then finds the highest-leverage moves.
-- **Phase 2: The Minimum Viable Version** — "What is the absolute minimum that achieves the core goal?" Names everything that gets deferred and why.
-- **Phase 3: The Binding Constraint** — Runs Simon Severino's [Luck framework](https://github.com/SimonTheSalesBooster/luck)'s seven diagnostic facets to find the one thing that will kill this initiative regardless of how well everything else works.
-- **Phase 4: Scope Decision** — Forces a choice: Expand (go for 10-star), Hold (fix the constraint first), or Reduce (ship the minimum). No mushy middle.
-- **Phase 5: Sprint Plan** — 5 days. 1-2 hours each. No planning days. No prep days. Just doing.
+PHASE 4 — SCOPE DECISION
+HOLD (fix the constraint first)
 
-## The Seven Diagnostic Facets
+PHASE 5 — SPRINT PLAN
+Day 1: [specific action, specific deliverable]
+Day 2-5: [builds, validates, ships]
+```
 
-| Facet | Question |
+## The Five Phases
+
+1. **The 10-Star Version** — What would make this 10x better for 2x effort?
+2. **The Minimum Viable Version** — What is the absolute minimum that achieves the core goal?
+3. **The Binding Constraint** — Seven diagnostic facets find the one thing that kills this regardless of how well everything else works
+4. **Scope Decision** — Expand, Hold, or Reduce. No mushy middle.
+5. **Sprint Plan** — 5 days. 1-2 hours each. No planning days. Just doing.
+
+## Seven Diagnostic Facets
+
+| Facet | The Question |
 |---|---|
-| **Solvency** | Can it sustain itself? Is there surplus after maintenance? |
-| **Gradient Coupling** | Is it connected to active demand or real energy? |
-| **Structural Compatibility** | Can surrounding systems actually use it? |
-| **Niche Construction** | Does adoption create demand for further use? |
-| **Circulation** | Does value flow through and back around, or pool? |
-| **Integration** | How densely connected is it to the broader ecology? |
-| **Path Sensitivity** | Is it the right move at the right moment? |
+| Solvency | Can it sustain itself after maintenance? |
+| Gradient Coupling | Is it connected to active demand? |
+| Structural Compatibility | Can surrounding systems actually use it? |
+| Niche Construction | Does adoption create demand for more? |
+| Circulation | Does value flow back, or just out? |
+| Integration | How connected is it to the broader ecology? |
+| Path Sensitivity | Right move at the right moment? |
 
-The first Weak or Failing facet is the binding constraint. Everything else is a distraction until that's fixed.
+The first Weak or Failing facet is the binding constraint. Everything else is a distraction.
 
-## The Seven Failure Patterns
+## Seven Failure Patterns
 
-| Pattern | What it looks like |
+| Pattern | What It Looks Like |
 |---|---|
-| **Flash in the pan** | Spreads fast, doesn't stick. No compounding. |
-| **Cult classic** | Brilliant but inaccessible. Can't cross the chasm. |
-| **Institutional zombie** | Still running on momentum. The energy source is gone. |
-| **Premature artifact** | Right idea, wrong moment. Precursors don't exist yet. |
-| **Extractive mirage** | Looks like growth. Actually burning the substrate. |
-| **Pooled fortune** | High output, no return loop. Value flows out and stays out. |
-| **Fragmented ecology** | Good parts that don't talk to each other. |
+| Flash in the pan | Spreads fast, doesn't stick |
+| Cult classic | Brilliant but can't cross the chasm |
+| Institutional zombie | Running on momentum, energy source gone |
+| Premature artifact | Right idea, wrong moment |
+| Extractive mirage | Looks like growth, actually burning substrate |
+| Pooled fortune | High output, no return loop |
+| Fragmented ecology | Good parts that don't talk to each other |
 
----
+## How to Use It
 
-## How to use it
-
-## As a Claude Code slash command
+### Claude Code slash command
 
 ```
 /strategy our client onboarding process
 /strategy the new podcast format
 ```
 
-## Installation
+### Installation
 
-**Global (available in every Claude Code session):**
+**Global:**
 
 ```bash
 git clone https://github.com/SimonTheSalesBooster/strategy.git
@@ -73,91 +81,39 @@ cp strategy/.claude/commands/strategy.md ~/.claude/commands/
 cp strategy/strategy-review.md ~/strategy-review.md
 ```
 
-**Per-project (available when working in that directory):**
+**Per-project:**
 
 ```bash
 cd your-project
 git clone https://github.com/SimonTheSalesBooster/strategy.git .claude/skills/strategy
 ```
 
-## As a system prompt
+### Standalone
 
-Paste `strategy-review.md` into any frontier model conversation, then describe what you want reviewed.
-
-## Standalone
-
-Copy the contents of `strategy-review.md` into ChatGPT, Claude, or any LLM. Then say:
-
-```
-Run a strategy review on: [your initiative here]
-```
+Paste `strategy-review.md` into any frontier model. Describe your initiative.
 
 ---
 
-## What it produces
+## When to Use It
 
-```
-PHASE 1 — THE 10-STAR VERSION
-[Current state → Dream state → 10x-for-2x moves]
-
-PHASE 2 — THE MINIMUM VIABLE VERSION
-[Core outcome → Deferred items → One-sentence minimum]
-
-PHASE 3 — BINDING CONSTRAINT
-1. Solvency ............ Strong
-2. Gradient Coupling ... Strong
-3. Structural Compat ... Adequate
-4. Niche Construction .. Adequate
-5. Circulation ......... Weak ← BINDING CONSTRAINT
-
-Failure pattern: Pooled Fortune
-
-PHASE 4 — SCOPE DECISION
-A. EXPAND | B. HOLD (recommended) | C. REDUCE
-
-PHASE 5 — SPRINT PLAN
-Day 1: [specific action, specific deliverable]
-Day 2: [builds on Day 1]
-Day 3: [momentum]
-Day 4: [validation]
-Day 5: [first measurable result]
-```
-
----
-
-## When to use it
-
-- Before starting any new initiative, campaign, or project
-- When an existing system feels stuck but you can't name why
+- Before starting any new initiative
+- When something feels stuck but you can't name why
 - Before a strategy sprint — to pick the right scope
 - When you're torn between "go bigger" and "just ship it"
-- During quarterly planning — run it on each major bet
 
-## When NOT to use it
+## When NOT to Use It
 
-- On initiatives already in motion that are working (don't fix what isn't broken)
-- As a substitute for talking to customers (diagnostics inform — they don't replace real conversations)
-- When the answer is already obvious and you just need to do the work
+- On things already working (don't fix what isn't broken)
+- As a substitute for talking to customers
 
 ---
 
-## How it connects
+## About
 
-This framework combines two open-source tools:
+Built by Simon Severino — author of *Strategy Sprints* and *Time Freedom* with Jay Abraham. Added over $2 Billion in sales to B2B clients in finance, software, and consulting.
 
-- **[gstack](https://github.com/garrytan/gstack)** by Garry Tan — the "explicit gears" principle: separate thinking modes produce better output than blending everything together
-- **[Luck](https://github.com/SimonTheSalesBooster/luck)** by Strategy Sprints — the seven diagnostic facets that reveal why systems persist or die
+Combines [gstack](https://github.com/garrytan/gstack) (Garry Tan's explicit gears principle) with the [Luck framework](https://github.com/SimonTheSalesBooster/luck) diagnostic lens.
 
-The Strategy Review is where they meet: Gary's scope discipline applied through the Luck framework's diagnostic lens, landing in a 5-day sprint you can start tomorrow.
+[Book a free Strategy Sprint call](https://www.strategysprints.com)
 
----
-
-## About Strategy Sprints
-
-[Strategy Sprints](https://www.strategysprints.com) helps B2B business owners close bigger deals, faster, without hiring more people. The method: 90-day sprints, weekly reviews, one constraint at a time.
-
-**Book a free Strategy Sprint call:** [strategysprints.com](https://www.strategysprints.com)
-
----
-
-*"Keep rolling, Simon & The Sprinters"*
+*keep rolling, Simon & The Sprinters*
